@@ -1,7 +1,7 @@
 // Welcome to the button, I would not suggest looking through this. It's not good code.
 console.log("%cThis is just a button, go away.", "color: red; font-size: 30px")
 var thing = 0
-if (parseInt(localStorage.getItem("clicks")) != NaN) {
+if (isNaN(parseInt(localStorage.getItem("clicks")))) {
 thing = parseInt(localStorage.getItem("clicks"))
 }
 document.getElementById("button_text").innerHTML = thing
